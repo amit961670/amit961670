@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="emi_calculator.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EMI Calculator</h1>
+        <form id="emi-form">
+            <div class="form-group">
+                <label for="principal">Loan Amount (Principal):</label>
+                <input type="number" id="principal" required>
+            </div>
+            <div class="form-group">
+                <label for="rate">Annual Interest Rate (%):</label>
+                <input type="number" id="rate" required>
+            </div>
+            <div class="form-group">
+                <label for="tenure">Loan Tenure (in months):</label>
+                <input type="number" id="tenure" required>
+            </div>
+            <button type="submit">Calculate EMI</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="emi_calculator.js"></script>
+</body>
+</html>
